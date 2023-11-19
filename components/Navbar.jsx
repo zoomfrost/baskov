@@ -23,7 +23,7 @@ const Navbar = () => {
       id: 3,
     },
     {
-      name: "about us",
+      name: "about",
       link: "/about",
       id: 4,
     },
@@ -34,7 +34,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="flex-center fixed top-0 z-50 w-full border-b-2 borber-black-200 py-7 text-white bg-emerald-800">
+    <nav className="flex-center fixed top-0 z-50 w-full borber-black-200 py-7 text-white bg-emerald-800">
       <div className="flex-between mx-auto w-full max-w-screen-2xl px-6 xs:px-8 sm:px-16 max=md:">
         <Link href="/">
           <Image src={logo} alt="logo" />
@@ -52,7 +52,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="flex flex-row gap-x-6">
+        <div className="flex flex-row gap-x-6 max-xs:gap-x-2">
           <Link href="/booking">
             <Button className="bg-black-100 font-light uppercase sm:text-sm text-base lg:text-lg">
               BOOK NOW
